@@ -1,0 +1,35 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply cyberpunk color palette */
+:root {
+    --background-color: #222831;
+    --secondary-bg-color: #393E46;
+    --accent-color: #00ADB5;
+    --text-color: #EEEEEE;
+}
+
+/* Page layout styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        position: static;
+    }
+}

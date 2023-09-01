@@ -1,0 +1,229 @@
+/* Apply the color palette */
+
+/* Heading of the admin Page */
+.heading {
+  display: flex;
+  justify-content: center;
+  color: #000000e0; /* New color: Light teal */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline 2px #504099; /* Dark purple */
+  margin-top: 20px;
+}
+
+.text-center {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  font-weight: bold;
+  text-decoration: underline 2px #504099; /* Dark purple */
+}
+
+/* Assign Heading */
+.assingHeadine {
+  display: flex;
+  justify-content: center;
+  color: #00ADB5; /* New color: Light teal */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Container for assigning reviewer and reviewing */
+.reviewContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #00ADB5; /* New color: Light teal */
+  flex-direction: column;
+  width: 40%;
+  margin-left: 30%;
+  align-items: center;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: #fff; /* White */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* For the reviewer container */
+.reviewer {
+  width: 90%;
+}
+
+/* Submit buttons div */
+.submitButtons {
+  margin-left: 36%;
+  width: 30%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* Submit buttons */
+.submitButtons button {
+  background-color: #00ADB5; /* New color: Light teal */
+  width: 10vw;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submitButtons button:hover {
+  background-color: #504099; /* Dark purple on hover */
+}
+
+/* This button is used in assigning admin */
+.submitButtons2 {
+  width: 10vw;
+}
+
+.btn {
+  background-color: #04023b; /* New color: Light yellow */
+  color: #00ADB5; /* New color: Light teal text */
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #504099; /* Dark purple on hover */
+  color: #fff; /* White text on hover */
+}
+
+#addemp {
+  background-color: #FE7BE5; /* New color: Light pink */
+  color: #00ADB5; /* New color: Light teal text */
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#addemp:hover {
+  background-color: #504099; /* Dark purple on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Add animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.reviewContainer,
+.submitButtons,
+.btn,
+#addemp {
+  animation: fadeIn 1s ease, moveUp 0.5s ease;
+}
+
+/* Define the moveUp animation */
+@keyframes moveUp {
+  from {
+      transform: translateY(10px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+/* Hover animation for headings */
+.heading:hover,
+.text-center:hover,
+.assingHeadine:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Hover animation for review container */
+.reviewContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation for submit buttons */
+.submitButtons button:hover,
+.btn:hover,
+#addemp:hover {
+    background-color: #504099; /* Dark purple on hover */
+    transform: scale(1.05);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Animation for background color change */
+.reviewContainer {
+    background-color: #7b94b9; /* White */
+    transition: background-color 0.3s ease;
+}
+
+.reviewContainer:hover {
+    background-color: #5abcb7; /* Light gray on hover */
+}
+/* Apply the fading gradient background animation */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  animation: changeGradientBackground 10s infinite;
+  background-size: 200% 200%;
+  background-image: linear-gradient(-45deg, #222831, #393E46, #00ADB5, #EEEEEE);
+}
+
+@keyframes changeGradientBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/* Apply animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.reviewContainer,
+.submitButtons,
+.btn,
+#addemp {
+    animation: fadeIn 1s ease, moveUp 0.5s ease;
+}
+
+/* Define the moveUp animation */
+@keyframes moveUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

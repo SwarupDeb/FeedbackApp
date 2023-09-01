@@ -1,0 +1,149 @@
+.navBar {
+    background-color: #222831;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navBar:hover {
+    background-color: #393E46;
+}
+
+.nameOfApp a {
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: -15px;
+    color: #00ADB5;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nameOfApp img {
+    height: 50px;
+    width: 60px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.nameOfUser {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.nameOfUser img {
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #00ADB5;
+}
+
+.logOut a {
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: color 0.3s ease;
+}
+
+.logOut a:hover {
+    color: #00ADB5;
+}
+
+.noUser ul {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.noUser li {
+    list-style: none;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.noUser li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.noUser li a:hover {
+    color: #00ADB5;
+}
+
+.logOut small {
+    font-size: 14px;
+    color: white;
+    text-decoration: underline 1px #00ADB5;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.logOut small:hover {
+    color: #00ADB5;
+}
+
+/* Add animations as desired */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animations */
+.navBar,
+.nameOfApp a,
+.nameOfApp img,
+.nameOfUser,
+.nameOfUser img,
+.logOut a,
+.noUser li,
+.logOut small {
+    animation: fadeIn 1s ease;
+}
+ 
+/* Apply the gradient color transition animation */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    animation: changeGradientBackground 10s infinite;
+    background-size: 200% 200%;
+    background-image: linear-gradient(-45deg, #481891, #661c61, #5813b8, #f79e05);
+  }
+  
+  @keyframes changeGradientBackground {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 0 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }

@@ -1,0 +1,159 @@
+/* Apply the color palette */
+
+/* General styles */
+body {
+    background-color: #222831;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the outer container */
+.outerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    animation: fadeIn 1s ease;
+}
+/* Admin password section */
+.adminPass {
+    margin-top: -45px;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+/* Submit button for admin password */
+.submitHomeButton {
+    border: 1px solid #00ADB5;
+    background-color: #393E46;
+    color: #00ADB5;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.submitHomeButton:hover {
+    background-color: #00ADB5;
+    color: #222831;
+}
+
+.home-box {
+    width: 55%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #393E46;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+.home-box:hover {
+    background-color: #222831;
+    transform: scale(1.05);
+}
+/* Employee review section */
+.employeereview,
+.myreview {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.employeereview img,
+.myreview img {
+    height: 85px;
+    width: 95px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.employeereview img:hover,
+.myreview img:hover {
+    transform: scale(1.1);
+}
+
+/* Review box */
+.reviewBox {
+    width: 95%;
+    min-height: 140px;
+    padding: 10px;
+    background-color: #393E46;
+    border: 1px solid #00ADB5;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.reviewBox:hover {
+    background-color: #686d74;
+    border-color: #26497e;
+}
+
+/* Form styling */
+.formClass {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #00ADB5;
+    border-radius: 7px;
+    margin-top: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+.formClass:hover {
+    border-color: #222831;
+}
+
+/* Card styling */
+.in-card {
+    width: 70%;
+    background-color: #393E46;
+    border: 1px solid #00ADB5;
+    border-radius: 40px;
+    margin-left: 15%;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.in-card:hover {
+    background-color: #222831;
+    border-color: #222831;
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.8);
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the gradient color transition animation */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    animation: changeGradientBackground 10s infinite;
+    background-size: 200% 200%;
+    background-image: linear-gradient(-45deg, #222831, #393E46, #00ADB5, #EEEEEE);
+  }
+  
+  @keyframes changeGradientBackground {
+    0% {
+      background-position: 0 50%;
+    }
+    25% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 0 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
